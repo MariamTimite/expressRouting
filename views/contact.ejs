@@ -1,0 +1,60 @@
+<!-- views/contact.ejs -->
+<%- include('layout', { body: `
+<section class="contact-section">
+    <div class="container-contact">
+        <div class="contact-info">
+            <!-- informations de contact -->
+            <h2>Contactez-nous</h2>
+            <ul class="info">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>47, Riviera 2, Abidjan,<br> Côte d'Ivoire</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>timitemariam789@gmail.com</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <span>+225 01 523 431 11</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h2>Envoyer un message</h2>
+            <div class="formBox">
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>Nom</span>
+                </div>
+
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>Prénom(s)</span>
+                </div>
+
+                <div class="inputBox w50">
+                    <input type="email" required>
+                    <span>Email</span>
+                </div>
+
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>Téléphone</span>
+                </div>
+
+                <div class="inputBox w100">
+                    <textarea required></textarea>
+                    <span>Message...</span>
+                </div>
+
+                <div class="inputBox w100">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+` }) %>
